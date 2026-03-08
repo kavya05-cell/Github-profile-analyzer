@@ -1,4 +1,4 @@
-# Github-profile-analyzer
+
 # GitHub Profile Analyzer
 
 A simple web application that analyzes GitHub profiles and visualizes developer activity using the GitHub API.
