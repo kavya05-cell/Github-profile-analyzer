@@ -1,33 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>GitHub Profile Analyzer</title>
-
 <link rel="stylesheet" href="style.css">
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 </head>
-
 <body>
-
 <h1>GitHub Profile Analyzer</h1>
-
 <div class="search-box">
 <input type="text" id="username" placeholder="Enter GitHub username">
 <button onclick="searchUser()">Search</button>
 </div>
-
-<!-- PROFILE CARD -->
-
-<div id="profile-card"></div>
-
-<!-- STATS DASHBOARD -->
-
+<div id="results">
+<div id="profile"></div>
 <div class="stats-container">
 
 <div class="stat-box">
@@ -46,20 +33,17 @@
 </div>
 
 </div>
-
-<!-- LANGUAGE CHART -->
-
 <div class="chart-container">
-<canvas id="languageChart"></canvas>
+    <canvas id="languageChart"></canvas>
 </div>
-
-<!-- REPOSITORIES -->
-
+<!-- <h2>Contribution Activity</h2>
+<div class="calendar">
+Loading GitHub contributions...
+</div> -->
 <h2>Top Repositories</h2>
-
 <div id="repos"></div>
-
+</div>
+</body>
 <script src="script.js"></script>
-
 </body>
 </html>
