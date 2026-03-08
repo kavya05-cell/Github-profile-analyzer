@@ -26,7 +26,7 @@ profile.innerHTML = "User not found";
 function displayProfile(user){
 const card = document.getElementById("profile-card");
 card.innerHTML = `
-<img src="${user.avatar_url}" width="100" style="border-radius:50%">
+<img src="${user.avatar_url}" width="100" style="border-radius:50%;margin-bottom:10px;">
 <h2>${user.name}</h2>
 <p>${user.bio ?? "No bio available"}</p>
 `;
@@ -102,4 +102,5 @@ data:data
 }]
 }
 });
+
 }
