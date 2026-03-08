@@ -75,9 +75,14 @@ h1{
 
 /* CHART */
 
-.chart-box{
-    width:420px;
+.chart-container{
+    width:320px;
+    height:320px;
     margin:40px auto;
+}
+#languageChart{
+    max-width:100%;
+    max-height:100%;
 }
 
 /* REPOSITORY GRID */
@@ -88,6 +93,9 @@ h1{
     gap:20px;
     max-width:900px;
     margin:30px auto;
+} 
+#results{
+display:none;
 }
 
 /* REPO CARD */
@@ -123,4 +131,10 @@ h1{
 .repo-card a:hover{
     text-decoration:underline;
 }
+.calendar{
+    max-width:900px;
+    margin:40px auto;
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
 }
