@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GitHub Profile Analyzer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h1>GitHub Profile Analyzer</h1>
+
+<div class="search-box">
+<input type="text" id="username" placeholder="Enter GitHub username">
+<button onclick="searchUser()">Search</button>
+</div>
+
+<!-- PROFILE CARD -->
+
+<div id="profile-card"></div>
+
+<!-- STATS DASHBOARD -->
+
+<div class="stats-container">
+
+<div class="stat-box">
+<h3>Followers</h3>
+<p id="followers">0</p>
+</div>
+
+<div class="stat-box">
+<h3>Following</h3>
+<p id="following">0</p>
+</div>
+
+<div class="stat-box">
+<h3>Public Repos</h3>
+<p id="repos-count">0</p>
+</div>
+
+</div>
+
+<!-- LANGUAGE CHART -->
+
+<div class="chart-container">
+<canvas id="languageChart"></canvas>
+</div>
+
+<!-- REPOSITORIES -->
+
+<h2>Top Repositories</h2>
+
+<div id="repos"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
